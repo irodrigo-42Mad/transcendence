@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Sign in to 42 Incredible pong
+	</title>
+	<link rel="stylesheet" href="./css/primary.css">
+</head>
+<body>
+	<div class="webbox" id="contents">
+		<form>
+			<h2 class="title">Sign In</h2>
+			<div class="inputbox">
+				<input tabindex="1" id="user" name="user" class="textbox" type="text" placeholder="Player name" aria-label="Player name" required="required" aria-required="true" aria-describedby="Player-name-instructions">
+				<div id="instrucciones-nombre" class="sr-only" aria-live="assertive">please. imput your player user name.</div>
+				<input type="password" id="pass" name="pass" class="textbox" placeholder="password" aria-label="Player password" required="required" aria-required="true" aria-describedby="Player-password-instructions">
+				<div id="instrucciones-nombre" class="sr-only" aria-live="assertive">please, imput your password.</div>
+				<span class="texto">Remember me: </span><input tabindex="3" id="remember" name="remember" type="checkbox" aria-label="Player remember" aria-describedby="Player-remember-instructions">
+				<div id="instrucciones-nombre" class="sr-only" aria-live="assertive">if you need to recover your credentials, check this.</div>
+			</div>
+			<div class="buttons">
+				<button type="submit" class="pulse">Sign in</button>
+				<button type="reset" class="pulse">Clear</button>
+				<input type="hidden" id="hidden-input" name="LearnerId">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
