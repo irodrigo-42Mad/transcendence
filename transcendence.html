@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Bienvenidos a 42 Excentric Pong</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h2>Sign in to 42</h2>
+
+      <div class="form-group">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" required aria-describedby="username-help">
+        <!-- tratar aqui los archivos de idioma en la db -->
+        <span id="username-help"class="visually-hidden">Por favor, ingresa tu nombre de usuario.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" required aria-describedby="password-help">
+        <!-- tratar aqui las opciones de idioma en la db -->
+        <span id="password-help" class="visually-hidden">Por favor, ingresa tu contraseña.</span>
+      </div>
+
+      <div class="button-group">
+        <button type="button" onclick="validateForm()">Welcome</button>
+        <button type="reset">Cancel</button>
+      </div>
+      <div role="alert" aria-live="assertive" class="status-message">
+        <!-- Mensajes de error o éxito aquí -->
+      </div>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
