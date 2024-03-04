@@ -23,25 +23,25 @@
             </a>
           </li>
           <li class="list">
-            <a href="#" onclick="">
+            <a href="#" onclick="showPage('live')">
               <span class="icon"><ion-icon name="pulse"></ion-icon></span>
               <span class="text">live</span>
             </a>
           </li>
           <li class="list">
-            <a href="#" onclick=""">
+            <a href="#" onclick="showPage('stats')">
               <span class="icon"><ion-icon name="stats"></ion-icon></span>
               <span class="text">stats</span>
             </a>
           </li>
           <li class="list">
-            <a href="#" onclick=""">
+            <a href="#" onclick="showPage('settings')">
               <span class="icon"><ion-icon name="settings"></ion-icon></span>
               <span class="text">options</span>
             </a>
           </li>
           <li class="list">
-            <a href="#" onclick=""">
+            <a href="#" onclick="showPage('usrprofile')">
               <span class="icon"><ion-icon name="people"></ion-icon></span>
               <span class="text">profile</span>
             </a>
@@ -68,6 +68,28 @@
             </div>
           </div>
 
+          <!-- en el interior de este bloque va la visualizacion de partidas en directo-->
+          <div id="live" class="page">
+            <div class="container">
+              <h2>ver partida en directo</h2>
+              <!-- Contenido de la página de contacto -->
+            </div>
+          </div>
+
+          <!-- en el interior de este bloque van las estadísticas de juego-->
+          <div id="stats" class="page">
+            <div class="container">
+              <h2>estadísticas del campeonato</h2>
+              <!-- Contenido de la página de contacto -->
+            </div>
+          </div>
+
+          <!-- en el interior de este bloque van las configuraciones de la partida, sonido, dificultad -->
+          <div id="settings" class="page">
+            <h2>Configuración</h2>
+            <!-- Contenido de la página de configuración -->
+          </div>
+
           <!-- en el interior de este bloque va el perfil del jugador local-->
           <div id="usrprofile" class="page">
             <div class="container">
@@ -86,23 +108,11 @@
               </div>
             </div>
 
-            <!-- en el interior de este bloque va la visualizacion de partidas en directo-->
-            <div id="live" class="page">
-              <h2>ver partida en directo</h2>
-              <!-- Contenido de la página de contacto -->
-            </div>
 
-            <!-- en el interior de este bloque van las estadísticas de juego-->
-            <div id="stats" class="page">
-              <h2>estadísticas</h2>
-              <!-- Contenido de la página de contacto -->
-            </div>
 
-            <!-- en el interior de este bloque van las configuraciones de la partida, sonido, dificultad -->
-            <div id="configuracion" class="page">
-              <h2>Configuración</h2>
-              <!-- Contenido de la página de configuración -->
-            </div>
+
+
+
 
             <!-- en el interior de este bloque se pueden poner datos de contacto de todos -->
             <div id="contacto" class="page">
